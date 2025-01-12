@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+        .form-container h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .form-container button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .form-container button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>CGPA Calculator</h1>
+        <form action="calculate.php" method="POST">
+            <label for="subject1">Subject 1 Marks</label>
+            <input type="number" id="subject1" name="subject1" min="0" max="100" required>
+
+            <label for="subject2">Subject 2 Marks</label>
+            <input type="number" id="subject2" name="subject2" min="0" max="100" required>
+
+            <label for="subject3">Subject 3 Marks</label>
+            <input type="number" id="subject3" name="subject3" min="0" max="100" required>
+
+            <label for="subject4">Subject 4 Marks</label>
+            <input type="number" id="subject4" name="subject4" min="0" max="100" required>
+
+            <label for="subject5">Subject 5 Marks</label>
+            <input type="number" id="subject5" name="subject5" min="0" max="100" required>
+
+            <button type="submit">Calculate CGPA</button>
+        </form>
+    </div>
+</body>
+</html>
